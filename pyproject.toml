@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brainmem"
+version = "1.0.0"
+description = "BrainMem: brain-inspired evolving memory for embodied agent task planning"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+# EmbodiedBench (installed separately, see README) provides the simulators,
+# planners and the provider SDKs (openai, anthropic, lmdeploy).
+dependencies = ["numpy", "pyyaml", "tqdm"]
+
+[tool.setuptools.packages.find]
+include = ["brainmem*"]

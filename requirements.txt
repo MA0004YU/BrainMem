@@ -1,0 +1,4 @@
+# BrainMem itself needs only these; everything else comes with EmbodiedBench.
+numpy
+pyyaml
+tqdm

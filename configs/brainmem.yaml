@@ -1,0 +1,40 @@
+# BrainMem hyper-parameters (Section IV-A). These values are fixed across every
+# benchmark and backbone. Ablations change them through --preset / --set.
+
+# Working memory
+window_size: 5            # W
+wm_success_state: true
+wm_agent_state: true
+wm_consistency_check: true
+
+# Episodic memory
+use_trajectory_kg: true
+use_spatial_kg: true
+state_merge_threshold: 0.8
+task_similarity_threshold: 0.5
+max_reasoning_examples: 3
+traj_recall_sequences: 2
+traj_recall_max_actions: 15
+failed_transitions_shown: 3
+spatial_relations_shown: 12
+spatial_stable_support: 2
+
+# Semantic memory
+top_k: 2                  # k
+alpha: 0.7
+beta: 0.3
+usage_saturation: 10
+max_guidelines: 20        # M
+prune_factor: 1.5         # pruning above 1.5 M = 30 guidelines
+protect_confidence: 0.8
+protect_min_success: 5
+guideline_merge_threshold: 0.6
+distill_context_records: 3
+
+# Guided retry
+max_retries: 3            # R
+
+# Experience agent: null = the backbone planner of the run
+experience_model: null
+experience_max_tokens: 2048
+experience_temperature: 0.0

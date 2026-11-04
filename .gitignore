@@ -9,3 +9,6 @@ running/
 .DS_Store
 .idea/
 .vscode/
+
+# local raw export (contains machine paths); cleaned copy is docs/memory_replay_tray_b.html
+Memory Replay*.html

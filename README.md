@@ -179,6 +179,14 @@ harness are those listed in Section IV-A of the paper, installed with EmbodiedBe
 procedure; the official splits and episode orderings are used without modification. Every run writes the
 software versions, GPU and git commit to `running/brainmem/<env>/<model>_<exp_name>/run_config.json`.
 
+## 8. Real-robot memory replay
+
+[`docs/memory_replay_tray_b.html`](docs/memory_replay_tray_b.html) is a self-contained interactive replay of
+one real-robot episode on a Franka FR3 ("grasp the marker, tilt 20°, press 5 N, slide 10 cm while rotating
+60°, then place it into tray B"). It synchronises the fixed camera view, the vertical force trace and the
+contents of working, scene, episodic and semantic memory over the 199 s episode, and highlights where a
+semantic-memory rule (the landing height of tray B) was reused. Download the file and open it in a browser.
+
 ## License
 
 BrainMem is released under the MIT License (see `LICENSE`). EmbodiedBench, the simulators and the datasets

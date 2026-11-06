@@ -10,6 +10,7 @@ running/
 .idea/
 .vscode/
 
-# local raw exports; cleaned copy is docs/brainmem_demo.html
+# local raw exports; cleaned copies are in docs/
 Memory Replay*.html
 BrainMem Demo*.html
+BrainMem Demo Simulator*.mp4

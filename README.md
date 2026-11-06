@@ -179,7 +179,7 @@ harness are those listed in Section IV-A of the paper, installed with EmbodiedBe
 procedure; the official splits and episode orderings are used without modification. Every run writes the
 software versions, GPU and git commit to `running/brainmem/<env>/<model>_<exp_name>/run_config.json`.
 
-## 8. Real-robot memory replay
+## 8. Demos
 
 [`docs/brainmem_demo.html`](docs/brainmem_demo.html) is a self-contained interactive replay of one real-robot
 recording on a Franka FR3 in which three pick-and-place tasks are run back to back (iron box → tray A,
@@ -187,6 +187,10 @@ stapler → tray C, plug → tray B). Over the 706 s recording it synchronises t
 force trace, the current motion intent and the contents of working, scene, episodic and semantic memory, and
 marks for each task when memory is read (known tray regions, retrieval of similar episodes), when the result is
 written back and when consolidation finishes. Download the file and open it in a browser.
+
+[`docs/brainmem_demo_simulator.mp4`](docs/brainmem_demo_simulator.mp4) is a 95 s simulator demo of the task
+"put the two newspapers into the drawer". It shows the agent's actions step by step and, after BrainMem is
+introduced, the working, episodic and long-term memory used for the task and the experience summarised from it.
 
 ## License
 

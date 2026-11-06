@@ -10,5 +10,6 @@ running/
 .idea/
 .vscode/
 
-# local raw export (contains machine paths); cleaned copy is docs/memory_replay_tray_b.html
+# local raw exports; cleaned copy is docs/brainmem_demo.html
 Memory Replay*.html
+BrainMem Demo*.html

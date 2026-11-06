@@ -181,11 +181,12 @@ software versions, GPU and git commit to `running/brainmem/<env>/<model>_<exp_na
 
 ## 8. Real-robot memory replay
 
-[`docs/memory_replay_tray_b.html`](docs/memory_replay_tray_b.html) is a self-contained interactive replay of
-one real-robot episode on a Franka FR3 ("grasp the marker, tilt 20°, press 5 N, slide 10 cm while rotating
-60°, then place it into tray B"). It synchronises the fixed camera view, the vertical force trace and the
-contents of working, scene, episodic and semantic memory over the 199 s episode, and highlights where a
-semantic-memory rule (the landing height of tray B) was reused. Download the file and open it in a browser.
+[`docs/brainmem_demo.html`](docs/brainmem_demo.html) is a self-contained interactive replay of one real-robot
+recording on a Franka FR3 in which three pick-and-place tasks are run back to back (iron box → tray A,
+stapler → tray C, plug → tray B). Over the 706 s recording it synchronises the fixed camera view, the vertical
+force trace, the current motion intent and the contents of working, scene, episodic and semantic memory, and
+marks for each task when memory is read (known tray regions, retrieval of similar episodes), when the result is
+written back and when consolidation finishes. Download the file and open it in a browser.
 
 ## License
 
